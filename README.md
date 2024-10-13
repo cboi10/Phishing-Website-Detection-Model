@@ -1,24 +1,21 @@
-# PhishingWebsiteDetection
+# Phishing Website Detection
 
 ## Introduction
-Phishing is a type of cyber attack where attackers uses social engineering techniques to trick the victum into giving their sensitive information, such as login credentials,credit card details, or other personal information.
+Phishing is a type of cyber attack where attackers use social engineering techniques to trick victims into revealing their sensitive information, such as login credentials, credit card details, or other personal information.
 
-## How do we detect it ?
-We are using Machine Learning to detect whether a particular website is phishing or not, Logistic Regression has been used based on the semantic and network based features of the url. Manual Threshold has been set to optimize the True positive rate.
+## How Do We Detect It?
+We employ Machine Learning techniques to detect whether a particular website is phishing or not. Specifically, we use Logistic Regression based on the semantic and network-based features of the URL. A manual threshold has been set to optimize the true positive rate.
 
-The notebook can be find here https://www.kaggle.com/code/tenzintsundue/phishing-website-detection.
+The detailed implementation can be found in the [notebook on Kaggle](https://www.kaggle.com/code/tenzintsundue/phishing-website-detection).
 
 ## About the API
-API has been created here that give information about the result prediction. The response will be in json format.
+An API has been created to provide prediction results. The response is in JSON format and includes the following fields:
 
-"Result": Whether the website url sent is phishing or not.[Possible Values:"Phishing", "Not Phishing"]
+- **Result**: Indicates whether the website URL is phishing or not. [Possible Values: "Phishing", "Not Phishing"]
+- **Result_binary**: Binary representation of the result. [Possible Values: -1 (phishing), 1 (legitimate)]
+- **url**: Returns the URL that was tested.
 
-"Result_binary": [Possible Values: -1 (phishing), 1(legitimate)]
+## Steps to Use the API
+To test if a website is phishing or not, use the following path:
 
-"url": sends back the url.
-## Steps
-../PhishingAlertAPI/mysite :
 
-.. signify current path and 
-
-mysite is website which you want to test if its phishing or not
