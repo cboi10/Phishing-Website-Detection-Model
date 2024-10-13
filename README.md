@@ -6,7 +6,7 @@ Phishing is a type of cyber attack where attackers use social engineering techni
 ## How Do We Detect It?
 We employ Machine Learning techniques to detect whether a particular website is phishing or not. Specifically, we use Logistic Regression based on the semantic and network-based features of the URL. A manual threshold has been set to optimize the true positive rate.
 
-The detailed implementation can be found in the [notebook on Kaggle](https://www.kaggle.com/code/tenzintsundue/phishing-website-detection).
+The detailed implementation can be found in the `Analysis-and-Model.ipynb`.
 
 ## About the API
 An API has been created to provide prediction results. The response is in JSON format and includes the following fields:
